@@ -256,6 +256,15 @@
       text-align: left;
     }
 
+    .tech-cloud {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.6;
+    }
+
     @media (max-width: 960px) {
       .hero { grid-template-columns: 1fr; }
       .grid .card { grid-column: span 12; } /* 1 card/row on mobile */
@@ -283,9 +292,14 @@
         <h2>Perception • Estimation • Path Planning • Manipulation.</h2>
 
         <p class="lead">
-          I work on robotics and applied ML: point-cloud / cone perception for autonomous driving, state
-          estimation (Kalman-based), smooth path generation, and industrial arm kinematics (UR3R Jacobians).
+          I work on robotics and applied ML: point-cloud / cone perception for autonomous driving,
+          state estimation (Kalman-based), smooth path generation, and industrial arm kinematics (UR3R Jacobians).
           I also build and evaluate deep learning classifiers in TensorFlow/Keras and NumPy.
+        </p>
+
+        <p class="lead" style="font-style:italic;">
+          I like building intelligent robotic systems that connect perception, decision, and control —
+          from low-level kinematics to deep learning–based vision.
         </p>
 
         <div class="cta">
@@ -297,7 +311,7 @@
 
         <div class="stats">
           <div class="stat">
-            <b>4</b>
+            <b>5</b>
             <div>Featured projects</div>
           </div>
           <div class="stat">
@@ -314,7 +328,7 @@
       <div class="panel">
         <h3 style="margin:6px 0 8px;">What I work on</h3>
         <ul style="margin:0; padding-left: 18px; line-height: 1.8; color: var(--muted);">
-          <li>TensorFlow/Keras pipelines (data / model / train / eval modules).</li>
+          <li>TensorFlow/Keras & PyTorch pipelines (data / model / train / eval modules).</li>
           <li>From-scratch NumPy neural nets (forward/backprop, optimizers).</li>
           <li>Classical ML baselines (scikit-learn / XGBoost) with EDA.</li>
           <li>Transfer learning on CIFAR-100 (MobileNetV2 fine-tuning, WIP).</li>
@@ -399,7 +413,7 @@
         <!-- Project 3 -->
         <article class="card">
           <div class="thumb">
-            <img src="results/cover3_new.png" alt="Neural network architecture diagram with weights and activations" />
+            <img src="results/cover3_new.png" alt="Neural network diagram with weights and activations" />
           </div>
           <div class="pad">
             <h3 style="margin:6px 0 6px;">Cat vs Dog — NumPy From-Scratch</h3>
@@ -462,6 +476,39 @@
           </div>
         </article>
 
+        <!-- Project 5 -->
+        <article class="card">
+          <div class="thumb">
+            <img src="results/cover5.png" alt="Cone-based path planning visualization" />
+          </div>
+          <div class="pad">
+            <h3 style="margin:6px 0 6px;">Formula Student — Path Planning (Hackathon)</h3>
+            <p class="lead" style="margin: 0 0 6px;">
+              Real-time path generation around cones for autonomous driving simulation.
+              Smooth trajectory computation from cone detections and geometric constraints.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Path Planning</span>
+              <span class="tag">Robotics</span>
+              <span class="tag">Simulation</span>
+            </div>
+            <div class="meta">
+              Focus: fast & reliable trajectory planning in a Formula Student Driverless context.
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn"
+               href="https://github.com/Alecbossard/Hackathon_PathPlanning"
+               target="_blank"
+               rel="noreferrer">Code</a>
+            <a class="btn secondary"
+               href="#"
+               target="_blank"
+               rel="noreferrer">Demo (soon)</a>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -488,18 +535,39 @@
         <div class="panel">
           <h3 style="margin:6px 0 8px;">Core skills</h3>
           <ul style="margin:0; padding-left: 18px; line-height: 1.8; color: var(--muted);">
-              <li>Robotics & Automation: ROS, mobile robotics, path planning, UR3R kinematics.</li>
-              <li>ML / DL: TensorFlow, Keras, PyTorch, scikit-learn, NumPy from scratch.</li>
-              <li>Programming: Python, C, C++, Arduino, Pandas, Matplotlib.</li>
-              <li>Software & Tools: Linux, Git, modular repos, clean project structure.</li>
-              <li>Transversal: project management, teamwork, adaptability.</li>
+            <li>Robotics & Automation: ROS/ROS2, mobile robotics, path planning, UR3R kinematics.</li>
+            <li>ML / DL: TensorFlow, Keras, PyTorch, scikit-learn, NumPy from scratch.</li>
+            <li>Programming: Python, C, C++, Arduino, Pandas, Matplotlib.</li>
+            <li>Software & Tools: Linux, Git, modular repos, clean project structure.</li>
+            <li>Transversal: project management, teamwork, adaptability.</li>
           </ul>
         </div>
       </div>
     </section>
 
+    <section class="section">
+      <h2>Technologies</h2>
+      <div class="panel">
+        <div class="tech-cloud">
+          <span>🐍 Python</span>
+          <span>🧠 TensorFlow / Keras / PyTorch</span>
+          <span>📊 scikit-learn</span>
+          <span>🤖 ROS / ROS2</span>
+          <span>🧭 Path Planning</span>
+          <span>📸 Computer Vision</span>
+          <span>🗺️ SLAM</span>
+          <span>📡 Sensor Fusion / Kalman</span>
+          <span>🦾 Kinematics (UR3R)</span>
+          <span>⚙️ C / C++</span>
+          <span>🛠 Embedded / Real-time</span>
+          <span>🐧 Linux</span>
+          <span>🔁 Git</span>
+        </div>
+      </div>
+    </section>
+
     <footer>
-      © <span id="y"></span> Robotics & AI — Portfolio. Built for GitHub Pages.
+      © <span id="y"></span> Robotics & AI — Portfolio. Built with HTML/CSS • Hosted on GitHub Pages.
     </footer>
   </div>
 
