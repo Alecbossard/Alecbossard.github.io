@@ -76,27 +76,27 @@
     <section class="hero" id="about">
       <div>
         <span class="pill">UPSSITECH • Robotics & AI (Bac+4)</span>
-        <h2>Path planning, perception, estimation & manipulation.</h2>
-        <p class="lead">I build and evaluate robotics pipelines: A*/splines for Formula Student, robust EKF sensor fusion, cone detection, and 6-DOF manipulator kinematics (UR3R). I like reproducible repos and concise demos.</p>
+        <h2>Applied ML & Robotics‑adjacent projects (classification, from‑scratch DL, transfer learning).<\/h2>
+        <p class="lead">I build and evaluate ML systems: clean Keras pipelines, from‑scratch NumPy networks, and transfer learning baselines on real datasets (Iris, CIFAR‑100).</p>
         <div class="cta">
           <a class="btn" href="#projects">See projects</a>
           <a class="btn secondary" href="CV.pdf">Download CV</a>
-          <a class="btn secondary" href="https://github.com/USERNAME" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn secondary" href="https://github.com/Alecbossard" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/Alecbossard" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
         <div class="stats" style="margin-top:14px;">
-          <div class="stat"><b>4</b><div>Core projects</div></div>
+          <div class="stat"><b>4</b><div>Featured projects</div></div>
           <div class="stat"><b>2 cmds</b><div>to run demos</div></div>
-          <div class="stat"><b>&lt; 80 ms</b><div>inference (perception)</div></div>
+          <div class="stat"><b>modular</b><div>clean repo layouts</div></div>
         </div>
       </div>
       <div class="panel">
         <h3 style="margin:6px 0 8px;">What I work on</h3>
         <ul style="margin:0; padding-left: 18px; line-height: 1.8; color: var(--muted);">
-          <li>Path planning on occupancy grids (A*, smoothing, curvature control).</li>
-          <li>Robust EKF for vehicle state (Huber/chi² gating, IMU+odo).</li>
-          <li>Cone detection (classical baseline → lightweight CNN).</li>
-          <li>UR3R: DH, FK/IK, Jacobians, simple task-space control.</li>
+          <li>TensorFlow/Keras pipelines (clean modules: data, model, train, eval).</li>
+          <li>From‑scratch NumPy neural nets (forward/backprop, optimizers).</li>
+          <li>Classical ML baselines (scikit‑learn/XGBoost) with solid EDA.</li>
+          <li>Transfer learning on CIFAR‑100 (MobileNetV2 fine‑tuning, WIP).</li>
         </ul>
       </div>
     </section>
@@ -108,69 +108,69 @@
         <article class="card">
           <div class="thumb">Drop a 16:9 cover image here (results/cover1.png)</div>
           <div class="pad">
-            <h3 style="margin:6px 0 6px;">Formula Student — Path Planning</h3>
-            <p class="lead" style="margin: 0 0 6px;">A* on grid + spline smoothing to generate collision‑free paths around cones, with curvature and time metrics.</p>
+            <h3 style="margin:6px 0 6px;">Iris Flower — Deep Learning (Keras)</h3>
+            <p class="lead" style="margin: 0 0 6px;">TensorFlow/Keras classification of Iris species with modular repo layout (data loader, model, train, eval) and saved weights.</p>
             <div class="tags">
-              <span class="tag">Python</span><span class="tag">A*</span><span class="tag">Splines</span><span class="tag">Planning</span>
+              <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">Classification</span>
             </div>
-            <div class="meta">Metrics: path length, max curvature, time/frame.</div>
+            <div class="meta">Metrics: accuracy, clean config-driven training.</div>
           </div>
           <div class="actions">
-            <a class="btn" href="https://github.com/USERNAME/REPO_PATH_PLANNING" target="_blank" rel="noreferrer">Code</a>
-            <a class="btn secondary" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noreferrer">Demo (45s)</a>
+            <a class="btn" href="https://github.com/Alecbossard/iris-deep-learning" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://github.com/Alecbossard/iris-deep-learning#readme" target="_blank" rel="noreferrer">README</a>
           </div>
-        </article>
+        </article>le>
 
         <!-- Project 2 -->
         <article class="card">
           <div class="thumb">Add an estimation plot here (results/cover2.png)</div>
           <div class="pad">
-            <h3 style="margin:6px 0 6px;">Robust EKF — Vehicle State</h3>
-            <p class="lead" style="margin: 0 0 6px;">IMU + odometry fusion with Huber loss and chi² gating to reject outliers and maintain stable pose estimation.</p>
+            <h3 style="margin:6px 0 6px;">Iris — Analysis & XGBoost</h3>
+            <p class="lead" style="margin: 0 0 6px;">Exploratory analysis, feature importance, and model comparison (Decision Tree vs XGBoost) with clear, numbered scripts and plots.</p>
             <div class="tags">
-              <span class="tag">Python</span><span class="tag">EKF</span><span class="tag">Robust Stats</span>
+              <span class="tag">Python</span><span class="tag">scikit‑learn</span><span class="tag">XGBoost</span><span class="tag">EDA</span>
             </div>
-            <div class="meta">Metrics: RMSE (pos/heading), outlier rate.</div>
+            <div class="meta">Metrics: accuracy/F1 • visual decision boundaries.</div>
           </div>
           <div class="actions">
-            <a class="btn" href="https://github.com/USERNAME/REPO_EKF_ROBUST" target="_blank" rel="noreferrer">Code</a>
-            <a class="btn secondary" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noreferrer">Demo (40s)</a>
+            <a class="btn" href="https://github.com/Alecbossard/iris-classification-project" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://github.com/Alecbossard/iris-classification-project#readme" target="_blank" rel="noreferrer">README</a>
           </div>
-        </article>
+        </article>le>
 
         <!-- Project 3 -->
         <article class="card">
           <div class="thumb">Put a detection screenshot here (results/cover3.png)</div>
           <div class="pad">
-            <h3 style="margin:6px 0 6px;">Cone Detection — Lightweight</h3>
-            <p class="lead" style="margin: 0 0 6px;">Color/morphology baseline upgraded with a tiny CNN for cone detection at &gt;30 FPS on laptop CPU.</p>
+            <h3 style="margin:6px 0 6px;">Cat vs Dog — NumPy From‑Scratch</h3>
+            <p class="lead" style="margin: 0 0 6px;">Deep learning without frameworks: forward/backprop, activations, losses, and a small DNN to classify cats vs dogs (WIP).</p>
             <div class="tags">
-              <span class="tag">Python</span><span class="tag">CV</span><span class="tag">CNN</span>
+              <span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">DNN</span><span class="tag">From‑scratch</span>
             </div>
-            <div class="meta">Metrics: Precision/Recall, latency (ms/frame).</div>
+            <div class="meta">Focus: educational clarity over accuracy • unit‑like checks.</div>
           </div>
           <div class="actions">
-            <a class="btn" href="https://github.com/USERNAME/REPO_CONE_DET" target="_blank" rel="noreferrer">Code</a>
-            <a class="btn secondary" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noreferrer">Demo (35s)</a>
+            <a class="btn" href="https://github.com/Alecbossard/cat-vs-dog-neural-network" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://github.com/Alecbossard/cat-vs-dog-neural-network#readme" target="_blank" rel="noreferrer">README</a>
           </div>
-        </article>
+        </article>le>
 
         <!-- Project 4 -->
         <article class="card">
           <div class="thumb">Add a manipulator graphic (results/cover4.png)</div>
           <div class="pad">
-            <h3 style="margin:6px 0 6px;">UR3R — Kinematics & Control</h3>
-            <p class="lead" style="margin: 0 0 6px;">DH parameters, FK/IK (numerical), geometric/analytic Jacobians, and simple task‑space positioning demo.</p>
+            <h3 style="margin:6px 0 6px;">CIFAR‑100 — MobileNetV2 Fine‑Tuning (WIP)</h3>
+            <p class="lead" style="margin: 0 0 6px;">Transfer learning baseline on CIFAR‑100 with MobileNetV2; focus on simple pipeline, correct preprocessing, and accuracy/params trade‑off.</p>
             <div class="tags">
-              <span class="tag">Python</span><span class="tag">Robotics</span><span class="tag">Kinematics</span>
+              <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Transfer Learning</span>
             </div>
-            <div class="meta">Metrics: position error &lt; 5 mm on targets.</div>
+            <div class="meta">Current test accuracy ≈ 65–70% • goal: 90%+ with minimal params.</div>
           </div>
           <div class="actions">
-            <a class="btn" href="https://github.com/USERNAME/REPO_UR3R" target="_blank" rel="noreferrer">Code</a>
-            <a class="btn secondary" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noreferrer">Demo (30s)</a>
+            <a class="btn" href="https://github.com/Alecbossard" target="_blank" rel="noreferrer">Code (soon)</a>
+            <a class="btn secondary" href="#" target="_blank" rel="noreferrer">Demo (soon)</a>
           </div>
-        </article>
+        </article>le>
       </div>
     </section>
 
@@ -180,7 +180,7 @@
         <div class="panel">
           <p class="lead" style="margin-top:0;">Based in Toulouse, open to internships abroad (EU/US/CA/UK). Available from <b>April–August 2026</b>.</p>
           <p class="lead">Email: <a href="mailto:firstname.lastname@mail.example">firstname.lastname@mail.example</a></p>
-          <p class="lead">LinkedIn: <a href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noreferrer">@USERNAME</a></p>
+          <p class="lead">LinkedIn: <a href="https://www.linkedin.com/in/Alecbossard" target="_blank" rel="noreferrer">@Alecbossard</a></p>
         </div>
         <div class="panel">
           <h3 style="margin:6px 0 8px;">How to run my demos</h3>
