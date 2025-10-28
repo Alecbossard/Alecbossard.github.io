@@ -21,12 +21,17 @@
     }
     a { color: var(--acc); text-decoration: none; }
     a:hover { text-decoration: underline; }
+
     .wrap { max-width: 1040px; margin: 0 auto; padding: 24px; }
-    header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 16px 0 8px; position: sticky; top: 0; background: linear-gradient(180deg, rgba(11,13,18,0.9), rgba(11,13,18,0.6) 60%, rgba(11,13,18,0)); backdrop-filter: blur(8px); z-index: 10; }
+
+    header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 16px 0 8px;
+      position: sticky; top: 0; background: linear-gradient(180deg, rgba(11,13,18,0.9), rgba(11,13,18,0.6) 60%, rgba(11,13,18,0));
+      backdrop-filter: blur(8px); z-index: 10; }
     .brand { display:flex; align-items:center; gap:12px; }
     .logo { width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, var(--acc), var(--acc2)); box-shadow: 0 6px 24px rgba(110,168,254,0.25); }
     .brand h1 { font-size: 18px; margin: 0; letter-spacing: 0.2px; }
     nav a { margin-left: 16px; font-size: 14px; color: var(--muted); }
+
     .hero { display:grid; grid-template-columns: 1.2fr 1fr; gap: 32px; padding: 24px 0 8px; align-items:center; }
     .pill { display:inline-block; padding: 6px 10px; border: 1px solid #2a3245; border-radius: 999px; font-size: 12px; color: var(--muted); }
     h2 { font-size: 28px; margin: 12px 0 8px; }
@@ -34,14 +39,19 @@
     .cta { display:flex; gap: 12px; flex-wrap:wrap; margin-top: 8px; }
     .btn { display:inline-block; padding: 10px 14px; border-radius: 10px; background: var(--acc); color: #0b0d12; font-weight: 600; border: 0; }
     .btn.secondary { background: transparent; color: var(--text); border: 1px solid #2a3245; }
+
     .stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
     .stat { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border: 1px solid #21283a; border-radius: 14px; padding: 14px; text-align:center; }
     .stat b { font-size: 18px; }
 
     .section { margin: 40px 0 16px; }
     .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-    .card { grid-column: span 6; background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border: 1px solid #21283a; border-radius: 16px; overflow: hidden; display:flex; flex-direction:column; min-height: 280px; }
-    .thumb { aspect-ratio: 16/9; width: 100%; background: #0f1522; display:flex; align-items:center; justify-content:center; color:#7a8ead; font-size: 14px; }
+    .card { grid-column: span 6; background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border: 1px solid #21283a;
+      border-radius: 16px; overflow: hidden; display:flex; flex-direction:column; min-height: 280px;
+      transition: transform .15s ease, box-shadow .15s ease; box-shadow: 0 6px 20px rgba(0,0,0,.15); }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,.22); }
+    .thumb { aspect-ratio: 16/9; width: 100%; background: linear-gradient(180deg, #121722, #0f1522);
+      display:flex; align-items:center; justify-content:center; color:#7a8ead; font-size: 14px; }
     .pad { padding: 16px; }
     .tags { display:flex; gap:8px; flex-wrap:wrap; margin-top: 8px; }
     .tag { font-size: 12px; color: var(--muted); border: 1px solid #2a3245; padding: 4px 8px; border-radius: 999px; }
@@ -54,7 +64,7 @@
 
     @media (max-width: 960px) {
       .hero { grid-template-columns: 1fr; }
-      .grid .card { grid-column: span 12; }
+      .grid .card { grid-column: span 12; } /* 1 carte/ligne sur mobile */
       .contact { grid-template-columns: 1fr; }
     }
   </style>
@@ -76,13 +86,13 @@
     <section class="hero" id="about">
       <div>
         <span class="pill">UPSSITECH • Robotics & AI (Bac+4)</span>
-        <h2>Applied ML & Robotics‑adjacent projects (classification, from‑scratch DL, transfer learning).<\/h2>
-        <p class="lead">I build and evaluate ML systems: clean Keras pipelines, from‑scratch NumPy networks, and transfer learning baselines on real datasets (Iris, CIFAR‑100).</p>
+        <h2>Applied ML & robotics projects: classification, from-scratch DL, transfer learning.</h2>
+        <p class="lead">I build and evaluate ML systems: clean Keras pipelines, from-scratch NumPy networks, and transfer learning baselines on real datasets (Iris, CIFAR-100).</p>
         <div class="cta">
           <a class="btn" href="#projects">See projects</a>
           <a class="btn secondary" href="CV.pdf">Download CV</a>
           <a class="btn secondary" href="https://github.com/Alecbossard" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/Alecbossard" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/alec-bossard/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
         <div class="stats" style="margin-top:14px;">
           <div class="stat"><b>4</b><div>Featured projects</div></div>
@@ -94,9 +104,9 @@
         <h3 style="margin:6px 0 8px;">What I work on</h3>
         <ul style="margin:0; padding-left: 18px; line-height: 1.8; color: var(--muted);">
           <li>TensorFlow/Keras pipelines (clean modules: data, model, train, eval).</li>
-          <li>From‑scratch NumPy neural nets (forward/backprop, optimizers).</li>
-          <li>Classical ML baselines (scikit‑learn/XGBoost) with solid EDA.</li>
-          <li>Transfer learning on CIFAR‑100 (MobileNetV2 fine‑tuning, WIP).</li>
+          <li>From-scratch NumPy neural nets (forward/backprop, optimizers).</li>
+          <li>Classical ML baselines (scikit-learn/XGBoost) with solid EDA.</li>
+          <li>Transfer learning on CIFAR-100 (MobileNetV2 fine-tuning, WIP).</li>
         </ul>
       </div>
     </section>
@@ -128,7 +138,7 @@
             <h3 style="margin:6px 0 6px;">Iris — Analysis & XGBoost</h3>
             <p class="lead" style="margin: 0 0 6px;">Exploratory analysis, feature importance, and model comparison (Decision Tree vs XGBoost) with clear, numbered scripts and plots.</p>
             <div class="tags">
-              <span class="tag">Python</span><span class="tag">scikit‑learn</span><span class="tag">XGBoost</span><span class="tag">EDA</span>
+              <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">EDA</span>
             </div>
             <div class="meta">Metrics: accuracy/F1 • visual decision boundaries.</div>
           </div>
@@ -142,12 +152,12 @@
         <article class="card">
           <div class="thumb">Put a detection screenshot here (results/cover3.png)</div>
           <div class="pad">
-            <h3 style="margin:6px 0 6px;">Cat vs Dog — NumPy From‑Scratch</h3>
+            <h3 style="margin:6px 0 6px;">Cat vs Dog — NumPy From-Scratch</h3>
             <p class="lead" style="margin: 0 0 6px;">Deep learning without frameworks: forward/backprop, activations, losses, and a small DNN to classify cats vs dogs (WIP).</p>
             <div class="tags">
-              <span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">DNN</span><span class="tag">From‑scratch</span>
+              <span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">DNN</span><span class="tag">From-scratch</span>
             </div>
-            <div class="meta">Focus: educational clarity over accuracy • unit‑like checks.</div>
+            <div class="meta">Focus: educational clarity over accuracy • unit-like checks.</div>
           </div>
           <div class="actions">
             <a class="btn" href="https://github.com/Alecbossard/cat-vs-dog-neural-network" target="_blank" rel="noreferrer">Code</a>
@@ -159,8 +169,8 @@
         <article class="card">
           <div class="thumb">Add a manipulator graphic (results/cover4.png)</div>
           <div class="pad">
-            <h3 style="margin:6px 0 6px;">CIFAR‑100 — MobileNetV2 Fine‑Tuning (WIP)</h3>
-            <p class="lead" style="margin: 0 0 6px;">Transfer learning baseline on CIFAR‑100 with MobileNetV2; focus on simple pipeline, correct preprocessing, and accuracy/params trade‑off.</p>
+            <h3 style="margin:6px 0 6px;">CIFAR-100 — MobileNetV2 Fine-Tuning (WIP)</h3>
+            <p class="lead" style="margin: 0 0 6px;">Transfer learning baseline on CIFAR-100 with MobileNetV2; focus on simple pipeline, correct preprocessing, and accuracy/params trade-off.</p>
             <div class="tags">
               <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Transfer Learning</span>
             </div>
@@ -179,8 +189,8 @@
       <div class="contact">
         <div class="panel">
           <p class="lead" style="margin-top:0;">Based in Toulouse, open to internships abroad (EU/US/CA/UK). Available from <b>April–August 2026</b>.</p>
-          <p class="lead">Email: <a href="mailto:firstname.lastname@mail.example">firstname.lastname@mail.example</a></p>
-          <p class="lead">LinkedIn: <a href="https://www.linkedin.com/in/Alecbossard" target="_blank" rel="noreferrer">@Alecbossard</a></p>
+          <p class="lead">Email: <a href="mailto:alecbossard@gmail.com">alecbossard@gmail.com</a></p>
+          <p class="lead">LinkedIn: <a href="https://www.linkedin.com/in/alec-bossard/" target="_blank" rel="noreferrer">@alec-bossard</a></p>
         </div>
         <div class="panel">
           <h3 style="margin:6px 0 8px;">How to run my demos</h3>
