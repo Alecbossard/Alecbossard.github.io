@@ -24,250 +24,117 @@
       background: radial-gradient(1200px 800px at 80% -10%, #1a2030 0%, #0b0d12 60%);
     }
 
-    a {
-      color: var(--acc);
-      text-decoration: none;
-    }
+    a { color: var(--acc); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    .wrap {
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 24px;
-    }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 24px; }
 
     header {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      padding: 16px 0 8px;
-      position: sticky;
-      top: 0;
-      background: linear-gradient(
-        180deg,
-        rgba(11,13,18,0.9),
-        rgba(11,13,18,0.6) 60%,
-        rgba(11,13,18,0)
-      );
-      backdrop-filter: blur(8px);
-      z-index: 10;
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      padding: 16px 0 8px; position: sticky; top: 0;
+      background: linear-gradient(180deg, rgba(11,13,18,0.9), rgba(11,13,18,0.6) 60%, rgba(11,13,18,0));
+      backdrop-filter: blur(8px); z-index: 10;
     }
 
-    .brand {
-      display:flex;
-      align-items:center;
-      gap:12px;
-    }
+    .brand { display:flex; align-items:center; gap:12px; }
 
     .logo {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
+      width: 36px; height: 36px; border-radius: 10px;
       background: linear-gradient(135deg, var(--acc), var(--acc2));
       box-shadow: 0 6px 24px rgba(110,168,254,0.25);
     }
 
-    .brand h1 {
-      font-size: 18px;
-      margin: 0;
-      letter-spacing: 0.2px;
-    }
+    .brand h1 { font-size: 18px; margin: 0; letter-spacing: 0.2px; }
 
-    nav a {
-      margin-left: 16px;
-      font-size: 14px;
-      color: var(--muted);
-    }
+    nav a { margin-left: 16px; font-size: 14px; color: var(--muted); }
 
     .hero {
-      display:grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 32px;
-      padding: 24px 0 8px;
-      align-items:center;
+      display:grid; grid-template-columns: 1.2fr 1fr; gap: 32px;
+      padding: 24px 0 8px; align-items:center;
     }
 
     .pill {
-      display:inline-block;
-      padding: 6px 10px;
-      border: 1px solid #2a3245;
-      border-radius: 999px;
-      font-size: 12px;
-      color: var(--muted);
+      display:inline-block; padding: 6px 10px; border: 1px solid #2a3245;
+      border-radius: 999px; font-size: 12px; color: var(--muted);
     }
 
-    h2 {
-      font-size: 28px;
-      margin: 12px 0 8px;
-    }
+    h2 { font-size: 28px; margin: 12px 0 8px; }
 
-    p.lead {
-      color: var(--muted);
-      margin: 8px 0 16px;
-      line-height: 1.6;
-    }
+    p.lead { color: var(--muted); margin: 8px 0 16px; line-height: 1.6; }
 
-    .cta {
-      display:flex;
-      gap: 12px;
-      flex-wrap:wrap;
-      margin-top: 8px;
-    }
+    .cta { display:flex; gap: 12px; flex-wrap:wrap; margin-top: 8px; }
 
     .btn {
-      display:inline-block;
-      padding: 10px 14px;
-      border-radius: 10px;
-      background: var(--acc);
-      color: #0b0d12;
-      font-weight: 600;
-      border: 0;
-      font-size: 14px;
-      line-height: 1.2;
+      display:inline-block; padding: 10px 14px; border-radius: 10px;
+      background: var(--acc); color: #0b0d12; font-weight: 600; border: 0;
+      font-size: 14px; line-height: 1.2;
     }
-
-    .btn.secondary {
-      background: transparent;
-      color: var(--text);
-      border: 1px solid #2a3245;
-    }
+    .btn.secondary { background: transparent; color: var(--text); border: 1px solid #2a3245; }
 
     .stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap: 12px;
-      margin-top:14px;
+      display: grid; grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 12px; margin-top:14px;
     }
 
     .stat {
       background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-      border: 1px solid #21283a;
-      border-radius: 14px;
-      padding: 14px;
-      text-align:center;
+      border: 1px solid #21283a; border-radius: 14px; padding: 14px; text-align:center;
     }
 
-    .stat b {
-      font-size: 18px;
-    }
+    .stat b { font-size: 18px; }
 
-    .section {
-      margin: 40px 0 16px;
-    }
+    .section { margin: 40px 0 16px; }
 
-    .grid {
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 16px;
-    }
+    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
 
     .card {
       grid-column: span 6;
       background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-      border: 1px solid #21283a;
-      border-radius: 16px;
-      overflow: hidden;
-      display:flex;
-      flex-direction:column;
-      min-height: 280px;
+      border: 1px solid #21283a; border-radius: 16px; overflow: hidden;
+      display:flex; flex-direction:column; min-height: 280px;
       transition: transform .15s ease, box-shadow .15s ease;
       box-shadow: 0 6px 20px rgba(0,0,0,.15);
     }
-
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 28px rgba(0,0,0,.22);
-    }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,.22); }
 
     .thumb {
-      aspect-ratio: 16/9;
-      width: 100%;
+      aspect-ratio: 16/9; width: 100%;
       background: linear-gradient(180deg, #121722, #0f1522);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#7a8ead;
-      font-size: 14px;
-      text-align: center;
-      padding: 8px;
+      display:flex; align-items:center; justify-content:center; color:#7a8ead;
+      font-size: 14px; text-align: center; padding: 8px;
     }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; display:block; }
 
-    .thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display:block;
-    }
+    .pad { padding: 16px; }
 
-    .pad {
-      padding: 16px;
-    }
-
-    .tags {
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
-      margin-top: 8px;
-    }
+    .tags { display:flex; gap:8px; flex-wrap:wrap; margin-top: 8px; }
 
     .tag {
-      font-size: 12px;
-      color: var(--muted);
-      border: 1px solid #2a3245;
-      padding: 4px 8px;
-      border-radius: 999px;
+      font-size: 12px; color: var(--muted); border: 1px solid #2a3245;
+      padding: 4px 8px; border-radius: 999px;
     }
 
     .meta {
-      display:flex;
-      gap: 10px;
-      align-items:center;
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.4;
+      display:flex; gap: 10px; align-items:center; margin-top: 10px;
+      color: var(--muted); font-size: 13px; line-height: 1.4;
     }
 
-    .actions {
-      margin-top: auto;
-      display:flex;
-      gap: 8px;
-      padding: 0 16px 16px;
-    }
+    .actions { margin-top: auto; display:flex; gap: 8px; padding: 0 16px 16px; }
 
-    .contact {
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
+    .contact { display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 
     .panel {
       background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-      border: 1px solid #21283a;
-      border-radius: 16px;
-      padding: 16px;
+      border: 1px solid #21283a; border-radius: 16px; padding: 16px;
     }
 
-    footer {
-      color: #7a8ead;
-      font-size: 13px;
-      padding: 24px 0 48px;
-      text-align: left;
-    }
+    footer { color: #7a8ead; font-size: 13px; padding: 24px 0 48px; text-align: left; }
 
-    .tech-cloud {
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      color:var(--muted);
-      font-size:14px;
-      line-height:1.6;
-    }
+    .tech-cloud { display:flex; flex-wrap:wrap; gap:10px; color:var(--muted); font-size:14px; line-height:1.6; }
 
     @media (max-width: 960px) {
       .hero { grid-template-columns: 1fr; }
-      .grid .card { grid-column: span 12; } /* 1 card/row on mobile */
+      .grid .card { grid-column: span 12; }
       .contact { grid-template-columns: 1fr; }
     }
   </style>
@@ -365,14 +232,8 @@
             </div>
           </div>
           <div class="actions">
-            <a class="btn"
-               href="https://github.com/Alecbossard/iris-deep-learning"
-               target="_blank"
-               rel="noreferrer">Code</a>
-            <a class="btn secondary"
-               href="https://github.com/Alecbossard/iris-deep-learning#readme"
-               target="_blank"
-               rel="noreferrer">README</a>
+            <a class="btn" href="https://github.com/Alecbossard/iris-deep-learning" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://github.com/Alecbossard/iris-deep-learning#readme" target="_blank" rel="noreferrer">README</a>
           </div>
         </article>
 
@@ -399,14 +260,8 @@
             </div>
           </div>
           <div class="actions">
-            <a class="btn"
-               href="https://github.com/Alecbossard/iris-classification-project"
-               target="_blank"
-               rel="noreferrer">Code</a>
-            <a class="btn secondary"
-               href="https://github.com/Alecbossard/iris-classification-project#readme"
-               target="_blank"
-               rel="noreferrer">README</a>
+            <a class="btn" href="https://github.com/Alecbossard/iris-classification-project" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://github.com/Alecbossard/iris-classification-project#readme" target="_blank" rel="noreferrer">README</a>
           </div>
         </article>
 
@@ -432,14 +287,8 @@
             </div>
           </div>
           <div class="actions">
-            <a class="btn"
-               href="https://github.com/Alecbossard/cat-vs-dog-neural-network"
-               target="_blank"
-               rel="noreferrer">Code</a>
-            <a class="btn secondary"
-               href="https://github.com/Alecbossard/cat-vs-dog-neural-network#readme"
-               target="_blank"
-               rel="noreferrer">README</a>
+            <a class="btn" href="https://github.com/Alecbossard/cat-vs-dog-neural-network" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://github.com/Alecbossard/cat-vs-dog-neural-network#readme" target="_blank" rel="noreferrer">README</a>
           </div>
         </article>
 
@@ -465,54 +314,43 @@
             </div>
           </div>
           <div class="actions">
-            <a class="btn"
-               href="https://github.com/Alecbossard"
-               target="_blank"
-               rel="noreferrer">Code (soon)</a>
-            <a class="btn secondary"
-               href="#"
-               target="_blank"
-               rel="noreferrer">Demo (soon)</a>
+            <a class="btn" href="https://github.com/Alecbossard" target="_blank" rel="noreferrer">Code (soon)</a>
+            <a class="btn secondary" href="#" target="_blank" rel="noreferrer">Demo (soon)</a>
           </div>
         </article>
 
-        <!-- Project 5 -->
+        <!-- Project 5 (replaced) -->
         <article class="card">
           <div class="thumb">
-            <img src="results/cover5.png" alt="Cone-based path planning visualization" />
+            <img src="results/cover5.png" alt="Java card game project with special cards and UML diagrams" />
           </div>
           <div class="pad">
-            <h3 style="margin:6px 0 6px;">Formula Student — Path Planning (Hackathon)</h3>
+            <h3 style="margin:6px 0 6px;">Les Pirates — Java Card Game</h3>
             <p class="lead" style="margin: 0 0 6px;">
-              Real-time path generation around cones for autonomous driving simulation.
-              Smooth trajectory computation from cone detections and geometric constraints.
+              Java implementation of a card game featuring multiple categories (Popularity, Attack, Special) and
+              unique effects. Includes turn management, pirate health, win conditions, and comprehensive UML diagrams.
+              Run by compiling the sources and executing the <code>Main</code> class.
             </p>
             <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Path Planning</span>
-              <span class="tag">Robotics</span>
-              <span class="tag">Simulation</span>
+              <span class="tag">Java</span>
+              <span class="tag">OOP</span>
+              <span class="tag">UML</span>
+              <span class="tag">Game</span>
             </div>
             <div class="meta">
-              Focus: fast & reliable trajectory planning in a Formula Student Driverless context.
+              Diagrams: system sequence • class diagrams (core & cards) • detailed special-cards sequences (healing & hand-swap).
             </div>
           </div>
           <div class="actions">
-            <a class="btn"
-               href="https://github.com/Alecbossard/Hackathon_PathPlanning"
-               target="_blank"
-               rel="noreferrer">Code</a>
-            <a class="btn secondary"
-               href="#"
-               target="_blank"
-               rel="noreferrer">Demo (soon)</a>
+            <a class="btn" href="https://github.com/Alecbossard/LesPirates" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://github.com/Alecbossard/LesPirates#readme" target="_blank" rel="noreferrer">README</a>
           </div>
         </article>
 
         <!-- Project 6 -->
         <article class="card">
           <div class="thumb">
-            <img src="results/cover6.png" alt="Integrated autonomous robot with navigation, voice control, and object detection" />
+            <img src="results/cover6-1280x720.jpg" alt="Integrated autonomous robot with navigation, voice control, and object detection" />
           </div>
           <div class="pad">
             <h3 style="margin:6px 0 6px;">Integrated Autonomous Robot — “Projet Fil Rouge”</h3>
@@ -533,14 +371,8 @@
             </div>
           </div>
           <div class="actions">
-            <a class="btn"
-               href="https://github.com/Alecbossard/PFR2"
-               target="_blank"
-               rel="noreferrer">Code</a>
-            <a class="btn secondary"
-               href="https://github.com/Alecbossard/PFR2#readme"
-               target="_blank"
-               rel="noreferrer">README</a>
+            <a class="btn" href="https://github.com/Alecbossard/PFR2" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://github.com/Alecbossard/PFR2#readme" target="_blank" rel="noreferrer">README</a>
           </div>
         </article>
 
@@ -561,9 +393,7 @@
           </p>
           <p class="lead">
             LinkedIn:
-            <a href="https://www.linkedin.com/in/alec-bossard/"
-               target="_blank"
-               rel="noreferrer">@alec-bossard</a>
+            <a href="https://www.linkedin.com/in/alec-bossard/" target="_blank" rel="noreferrer">@alec-bossard</a>
           </p>
         </div>
 
