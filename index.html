@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SRI — Robotics & AI Portfolio</title>
+  <meta name="description" content="Robotics & AI student portfolio: perception, estimation, path planning, manipulation." />
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --card: #121722;
+      --text: #e8eefc;
+      --muted: #a9b1c7;
+      --acc: #6ea8fe;
+      --acc2: #6ef0c3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+      color: var(--text); background: radial-gradient(1200px 800px at 80% -10%, #1a2030 0%, #0b0d12 60%);
+    }
+    a { color: var(--acc); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 24px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 16px 0 8px; position: sticky; top: 0; background: linear-gradient(180deg, rgba(11,13,18,0.9), rgba(11,13,18,0.6) 60%, rgba(11,13,18,0)); backdrop-filter: blur(8px); z-index: 10; }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .logo { width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, var(--acc), var(--acc2)); box-shadow: 0 6px 24px rgba(110,168,254,0.25); }
+    .brand h1 { font-size: 18px; margin: 0; letter-spacing: 0.2px; }
+    nav a { margin-left: 16px; font-size: 14px; color: var(--muted); }
+    .hero { display:grid; grid-template-columns: 1.2fr 1fr; gap: 32px; padding: 24px 0 8px; align-items:center; }
+    .pill { display:inline-block; padding: 6px 10px; border: 1px solid #2a3245; border-radius: 999px; font-size: 12px; color: var(--muted); }
+    h2 { font-size: 28px; margin: 12px 0 8px; }
+    p.lead { color: var(--muted); margin: 8px 0 16px; line-height: 1.6; }
+    .cta { display:flex; gap: 12px; flex-wrap:wrap; margin-top: 8px; }
+    .btn { display:inline-block; padding: 10px 14px; border-radius: 10px; background: var(--acc); color: #0b0d12; font-weight: 600; border: 0; }
+    .btn.secondary { background: transparent; color: var(--text); border: 1px solid #2a3245; }
+    .stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+    .stat { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border: 1px solid #21283a; border-radius: 14px; padding: 14px; text-align:center; }
+    .stat b { font-size: 18px; }
+
+    .section { margin: 40px 0 16px; }
+    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+    .card { grid-column: span 6; background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border: 1px solid #21283a; border-radius: 16px; overflow: hidden; display:flex; flex-direction:column; min-height: 280px; }
+    .thumb { aspect-ratio: 16/9; width: 100%; background: #0f1522; display:flex; align-items:center; justify-content:center; color:#7a8ead; font-size: 14px; }
+    .pad { padding: 16px; }
+    .tags { display:flex; gap:8px; flex-wrap:wrap; margin-top: 8px; }
+    .tag { font-size: 12px; color: var(--muted); border: 1px solid #2a3245; padding: 4px 8px; border-radius: 999px; }
+    .meta { display:flex; gap: 10px; align-items:center; margin-top: 10px; color: var(--muted); font-size: 13px; }
+    .actions { margin-top: auto; display:flex; gap: 8px; padding: 0 16px 16px; }
+
+    .contact { display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .panel { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border: 1px solid #21283a; border-radius: 16px; padding: 16px; }
+    footer { color: #7a8ead; font-size: 13px; padding: 24px 0 48px; }
+
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid .card { grid-column: span 12; }
+      .contact { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Robotics & AI — Portfolio</h1>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="about">
+      <div>
+        <span class="pill">UPSSITECH • Robotics & AI (Bac+4)</span>
+        <h2>Path planning, perception, estimation & manipulation.</h2>
+        <p class="lead">I build and evaluate robotics pipelines: A*/splines for Formula Student, robust EKF sensor fusion, cone detection, and 6-DOF manipulator kinematics (UR3R). I like reproducible repos and concise demos.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn secondary" href="CV.pdf">Download CV</a>
+          <a class="btn secondary" href="https://github.com/USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+        <div class="stats" style="margin-top:14px;">
+          <div class="stat"><b>4</b><div>Core projects</div></div>
+          <div class="stat"><b>2 cmds</b><div>to run demos</div></div>
+          <div class="stat"><b>&lt; 80 ms</b><div>inference (perception)</div></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3 style="margin:6px 0 8px;">What I work on</h3>
+        <ul style="margin:0; padding-left: 18px; line-height: 1.8; color: var(--muted);">
+          <li>Path planning on occupancy grids (A*, smoothing, curvature control).</li>
+          <li>Robust EKF for vehicle state (Huber/chi² gating, IMU+odo).</li>
+          <li>Cone detection (classical baseline → lightweight CNN).</li>
+          <li>UR3R: DH, FK/IK, Jacobians, simple task-space control.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Featured projects</h2>
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="card">
+          <div class="thumb">Drop a 16:9 cover image here (results/cover1.png)</div>
+          <div class="pad">
+            <h3 style="margin:6px 0 6px;">Formula Student — Path Planning</h3>
+            <p class="lead" style="margin: 0 0 6px;">A* on grid + spline smoothing to generate collision‑free paths around cones, with curvature and time metrics.</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">A*</span><span class="tag">Splines</span><span class="tag">Planning</span>
+            </div>
+            <div class="meta">Metrics: path length, max curvature, time/frame.</div>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://github.com/USERNAME/REPO_PATH_PLANNING" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noreferrer">Demo (45s)</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <div class="thumb">Add an estimation plot here (results/cover2.png)</div>
+          <div class="pad">
+            <h3 style="margin:6px 0 6px;">Robust EKF — Vehicle State</h3>
+            <p class="lead" style="margin: 0 0 6px;">IMU + odometry fusion with Huber loss and chi² gating to reject outliers and maintain stable pose estimation.</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">EKF</span><span class="tag">Robust Stats</span>
+            </div>
+            <div class="meta">Metrics: RMSE (pos/heading), outlier rate.</div>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://github.com/USERNAME/REPO_EKF_ROBUST" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noreferrer">Demo (40s)</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card">
+          <div class="thumb">Put a detection screenshot here (results/cover3.png)</div>
+          <div class="pad">
+            <h3 style="margin:6px 0 6px;">Cone Detection — Lightweight</h3>
+            <p class="lead" style="margin: 0 0 6px;">Color/morphology baseline upgraded with a tiny CNN for cone detection at &gt;30 FPS on laptop CPU.</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">CV</span><span class="tag">CNN</span>
+            </div>
+            <div class="meta">Metrics: Precision/Recall, latency (ms/frame).</div>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://github.com/USERNAME/REPO_CONE_DET" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noreferrer">Demo (35s)</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="card">
+          <div class="thumb">Add a manipulator graphic (results/cover4.png)</div>
+          <div class="pad">
+            <h3 style="margin:6px 0 6px;">UR3R — Kinematics & Control</h3>
+            <p class="lead" style="margin: 0 0 6px;">DH parameters, FK/IK (numerical), geometric/analytic Jacobians, and simple task‑space positioning demo.</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Robotics</span><span class="tag">Kinematics</span>
+            </div>
+            <div class="meta">Metrics: position error &lt; 5 mm on targets.</div>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://github.com/USERNAME/REPO_UR3R" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn secondary" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noreferrer">Demo (30s)</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="panel">
+          <p class="lead" style="margin-top:0;">Based in Toulouse, open to internships abroad (EU/US/CA/UK). Available from <b>April–August 2026</b>.</p>
+          <p class="lead">Email: <a href="mailto:firstname.lastname@mail.example">firstname.lastname@mail.example</a></p>
+          <p class="lead">LinkedIn: <a href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noreferrer">@USERNAME</a></p>
+        </div>
+        <div class="panel">
+          <h3 style="margin:6px 0 8px;">How to run my demos</h3>
+          <ol style="margin:0; padding-left: 18px; line-height: 1.8; color: var(--muted);">
+            <li>Clone a repo (see links above).</li>
+            <li><code>conda env create -f environment.yml</code> or <code>pip install -r requirements.txt</code></li>
+            <li><code>python run.py --demo</code></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Robotics & AI — Portfolio. Built for GitHub Pages.
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
