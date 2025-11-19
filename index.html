@@ -227,7 +227,8 @@
 
           <p class="lead" style="font-style:italic;">
             I enjoy connecting perception, decision and control — from UR3R kinematics and autonomous navigation
-            to ML models (scikit-learn, XGBoost, PyTorch) and Streamlit dashboards for data-driven decisions.
+            to ML models (scikit-learn, XGBoost, PyTorch) and Streamlit dashboards for data-driven decisions,
+            plus small-scale cloud deployments on AWS with Docker.
           </p>
 
           <div class="cta">
@@ -266,7 +267,8 @@
             <li>End-to-end ML projects (data pipeline, models, evaluation, dashboards).</li>
             <li>Classical ML &amp; DL baselines: scikit-learn, XGBoost, PyTorch MLPs.</li>
             <li>User analytics &amp; churn prediction with production-style structure.</li>
-            <li>Incident management assistant: NestJS API, embeddings, AI suggestions.</li>
+            <li>Incident management assistant: NestJS API, pgvector embeddings, AI suggestions, Dockerized stack deployed on AWS EC2.</li>
+            <li>LLM-based assistants and prompt design (incident co-pilot, global assistant).</li>
             <li>Robot kinematics &amp; navigation (UR3R arm, Projet Fil Rouge autonomous robot).</li>
           </ul>
         </div>
@@ -283,7 +285,6 @@
               <a href="https://github.com/Alecbossard/user-analytics-churn-platform"
                  target="_blank" rel="noopener noreferrer"
                  aria-label="Open User Analytics & Churn Prediction Platform repository">
-                <!-- Change to your actual screenshot path if needed -->
                 <img src="results/cover_churn.png"
                      alt="Dashboard and ROC curves for churn prediction platform"
                      width="1280" height="720">
@@ -324,7 +325,6 @@
               <a href="https://github.com/Alecbossard/incident-copilot"
                  target="_blank" rel="noopener noreferrer"
                  aria-label="Open Incident Co-Pilot repository">
-                <!-- Change to your actual screenshot path if needed -->
                 <img src="results/cover_incident.png"
                      alt="Incident Co-Pilot web UI with incidents list and AI assistant"
                      width="1280" height="720" loading="lazy">
@@ -334,8 +334,10 @@
               <h3 style="margin:6px 0 6px;">Incident Co-Pilot — AI Incident Assistant</h3>
               <p class="lead" style="margin: 0 0 6px;">
                 A monorepo for an AI-powered incident management assistant. Includes a NestJS API with
-                Prisma + PostgreSQL, incident CRUD, embeddings-based search, suggestion endpoints, and a
-                modern Next.js frontend to triage, filter and discuss incidents with an AI co-pilot.
+                Prisma + PostgreSQL/pgvector, incident CRUD, embeddings-based similarity search, AI suggestion
+                endpoints, and a modern Next.js frontend to triage, filter and discuss incidents with an AI co-pilot.
+                The full stack (API, web app, AI microservice, Postgres, Redis, MinIO) is Dockerized and deployed
+                on an AWS EC2 instance using Docker Compose.
               </p>
               <div class="tags">
                 <span class="tag">TypeScript</span>
@@ -343,10 +345,14 @@
                 <span class="tag">Next.js</span>
                 <span class="tag">PostgreSQL</span>
                 <span class="tag">Prisma</span>
+                <span class="tag">pgvector</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">OpenAI API</span>
                 <span class="tag">Docker</span>
+                <span class="tag">AWS EC2</span>
               </div>
               <div class="meta">
-                Focus: realistic API design, clean modules, and integration of LLM-based suggestions into a web app.
+                Focus: realistic API design, clean modules, LLM integration and cloud deployment (AWS EC2 + Docker Compose).
               </div>
             </div>
             <div class="actions">
@@ -497,7 +503,8 @@
               <li>Robotics &amp; Automation: mobile robotics, path planning, UR3R kinematics.</li>
               <li>ML / DL: scikit-learn, XGBoost, PyTorch, TensorFlow/Keras, model evaluation.</li>
               <li>Data &amp; analytics: churn modelling, EDA, KPIs, dashboards (Streamlit).</li>
-              <li>Backend &amp; web: TypeScript, NestJS, Next.js, PostgreSQL, Prisma, Docker.</li>
+              <li>Backend &amp; web: TypeScript, NestJS, Next.js, PostgreSQL, Prisma, REST APIs.</li>
+              <li>Cloud &amp; DevOps: Docker Compose deployments on AWS EC2, environment configuration, basic monitoring/logs.</li>
               <li>Software &amp; Tools: Linux, Git, modular repos, clean project structure.</li>
             </ul>
           </div>
@@ -519,10 +526,13 @@
             <span>⚙️ C / C++</span>
             <span>🛠 Embedded / Real-time</span>
             <span>🌐 TypeScript / NestJS / Next.js</span>
-            <span>🗄️ PostgreSQL / Prisma</span>
+            <span>🗄️ PostgreSQL / Prisma / pgvector</span>
+            <span>⚡ FastAPI / OpenAI API</span>
+            <span>💾 Redis / MinIO</span>
+            <span>☁️ AWS EC2</span>
             <span>🐧 Linux</span>
             <span>🔁 Git</span>
-            <span>📦 Docker</span>
+            <span>📦 Docker / Docker Compose</span>
           </div>
         </div>
       </section>
