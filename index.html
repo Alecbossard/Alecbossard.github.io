@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>SRI — Robotics & AI Portfolio</title>
-  <meta name="description" content="Robotics, applied ML and data projects: churn prediction platform, AI incident assistant, autonomous robot, CIFAR-100 transfer learning, and NumPy cat vs dog." />
+  <meta name="description" content="Robotics, applied ML and data projects: churn prediction platform, AI incident assistant, autonomous robot, CIFAR-100 transfer learning, and autonomous racing path planning." />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0b0d12">
 
@@ -16,7 +16,7 @@
   <!-- Open Graph / Social preview -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="SRI — Robotics & AI Portfolio">
-  <meta property="og:description" content="Featured projects: churn analytics platform, AI incident co-pilot, autonomous robot, CIFAR-100 MobileNetV2, and NumPy cat vs dog classifier.">
+  <meta property="og:description" content="Featured projects: churn analytics platform, AI incident co-pilot, autonomous robot, CIFAR-100 MobileNetV2, and autonomous racing trajectory planner.">
   <meta property="og:url" content="https://alecbossard.github.io/">
   <meta property="og:image" content="https://alecbossard.github.io/results/cover6.png">
 
@@ -266,8 +266,9 @@
           <ul style="margin:0; padding-left: 18px; line-height: 1.8; color: var(--muted);">
             <li>End-to-end ML projects (data pipeline, models, evaluation, dashboards).</li>
             <li>Classical ML &amp; DL baselines: scikit-learn, XGBoost, PyTorch MLPs.</li>
+            <li>Autonomous racing path planning: cone-based tracks, RRT* + QP racing line optimisation, 3D web visualisations.</li>
             <li>User analytics &amp; churn prediction with production-style structure.</li>
-            <li>Incident management assistant: NestJS API, pgvector embeddings, AI suggestions, Dockerized stack deployed on AWS EC2.</li>
+            <li>Incident management assistant: NestJS API, pgvector embeddings, AI suggestion endpoints, Dockerized stack deployed on AWS EC2.</li>
             <li>LLM-based assistants and prompt design (incident co-pilot, global assistant).</li>
             <li>Robot kinematics &amp; navigation (UR3R arm, Projet Fil Rouge autonomous robot).</li>
           </ul>
@@ -319,7 +320,52 @@
             </div>
           </article>
 
-          <!-- 2. Incident Co-Pilot -->
+          <!-- 2. Path Planning Studio — Autonomous Racing Trajectory Planner -->
+          <article class="card">
+            <div class="thumb">
+              <a href="https://github.com/Alecbossard/PathPlanning"
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Open Path Planning Studio repository">
+                <img src="results/cover_path_planning.png"
+                     alt="3D view of an autonomous racing car following an optimised trajectory on a cone-based track"
+                     width="1280" height="720" loading="lazy">
+              </a>
+            </div>
+            <div class="pad">
+              <h3 style="margin:6px 0 6px;">Path Planning Studio — Autonomous Racing Trajectory Planner</h3>
+              <p class="lead" style="margin: 0 0 6px;">
+                Interactive 3D web app for cone-based Formula Student / autonomous racing tracks.
+                Generates centerlines and optimised racing lines using a pipeline of RRT* shortcutting
+                and QP-based curvature minimisation, with a simulated car, ghost laps and live telemetry
+                (speed, g-forces, G-G diagram). Built with React, TypeScript, Vite and React Three Fiber,
+                and deployed on Google Cloud Run.
+              </p>
+              <div class="tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+                <span class="tag">Vite</span>
+                <span class="tag">Three.js</span>
+                <span class="tag">react-three-fiber</span>
+                <span class="tag">Path Planning</span>
+                <span class="tag">RRT*</span>
+                <span class="tag">QP optimisation</span>
+                <span class="tag">Google Cloud Run</span>
+              </div>
+              <div class="meta">
+                Focus: autonomous racing trajectory optimisation (RRT* + QP) with real-time 3D visualisation and a production-like web UI.
+              </div>
+            </div>
+            <div class="actions">
+              <a class="btn"
+                 href="https://github.com/Alecbossard/path-planning-studio"
+                 target="_blank" rel="noopener noreferrer">Code</a>
+              <a class="btn secondary"
+                 href="https://path-planning-studio-974707427282.us-west1.run.app/"
+                 target="_blank" rel="noopener noreferrer">Live demo</a>
+            </div>
+          </article>
+
+          <!-- 3. Incident Co-Pilot -->
           <article class="card">
             <div class="thumb">
               <a href="https://github.com/Alecbossard/incident-copilot"
@@ -365,7 +411,7 @@
             </div>
           </article>
 
-          <!-- 3. Integrated Autonomous Robot — Projet Fil Rouge -->
+          <!-- 4. Integrated Autonomous Robot — Projet Fil Rouge -->
           <article class="card">
             <div class="thumb">
               <a href="https://github.com/Alecbossard/PFR2"
@@ -400,7 +446,7 @@
             </div>
           </article>
 
-          <!-- 4. CIFAR-100 — MobileNetV2 Fine-Tuning (WIP) -->
+          <!-- 5. CIFAR-100 — MobileNetV2 Fine-Tuning (WIP) -->
           <article class="card">
             <div class="thumb">
               <a href="https://github.com/Alecbossard/cifar100-mobilenetv2/tree/main"
@@ -438,44 +484,6 @@
             </div>
           </article>
 
-          <!-- 5. Cat vs Dog — NumPy From-Scratch -->
-          <article class="card">
-            <div class="thumb">
-              <a href="https://github.com/Alecbossard/cat-vs-dog-neural-network"
-                 target="_blank" rel="noopener noreferrer"
-                 aria-label="Open Cat vs Dog NumPy neural network repository">
-                <img src="results/cover3_new.png"
-                     alt="Neural network diagram with weights and activations for cat vs dog"
-                     width="1280" height="720" loading="lazy">
-              </a>
-            </div>
-            <div class="pad">
-              <h3 style="margin:6px 0 6px;">Cat vs Dog — NumPy Neural Network (From Scratch)</h3>
-              <p class="lead" style="margin: 0 0 6px;">
-                Deep learning without high-level frameworks: manual forward/backprop with NumPy,
-                simple fully-connected architecture, custom training loop and evaluation on a
-                cats vs dogs image classification task. Focus on clarity and understanding each step.
-              </p>
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">NumPy</span>
-                <span class="tag">From-scratch</span>
-                <span class="tag">Deep Learning</span>
-              </div>
-              <div class="meta">
-                Educational project to demonstrate how gradient-based learning works under the hood.
-              </div>
-            </div>
-            <div class="actions">
-              <a class="btn"
-                 href="https://github.com/Alecbossard/cat-vs-dog-neural-network"
-                 target="_blank" rel="noopener noreferrer">Code</a>
-              <a class="btn secondary"
-                 href="https://github.com/Alecbossard/cat-vs-dog-neural-network#readme"
-                 target="_blank" rel="noopener noreferrer">README</a>
-            </div>
-          </article>
-
         </div>
       </section>
 
@@ -500,11 +508,11 @@
           <div class="panel">
             <h3 style="margin:6px 0 8px;">Core skills</h3>
             <ul style="margin:0; padding-left: 18px; line-height: 1.8; color: var(--muted);">
-              <li>Robotics &amp; Automation: mobile robotics, path planning, UR3R kinematics.</li>
+              <li>Robotics &amp; Automation: mobile robotics, autonomous racing path planning, UR3R kinematics.</li>
               <li>ML / DL: scikit-learn, XGBoost, PyTorch, TensorFlow/Keras, model evaluation.</li>
               <li>Data &amp; analytics: churn modelling, EDA, KPIs, dashboards (Streamlit).</li>
-              <li>Backend &amp; web: TypeScript, NestJS, Next.js, PostgreSQL, Prisma, REST APIs.</li>
-              <li>Cloud &amp; DevOps: Docker Compose deployments on AWS EC2, environment configuration, basic monitoring/logs.</li>
+              <li>Backend &amp; web: TypeScript, React, NestJS, Next.js, Vite, PostgreSQL, Prisma, REST APIs, 3D visualisations with Three.js / React Three Fiber.</li>
+              <li>Cloud &amp; DevOps: Docker Compose deployments on AWS EC2 and Google Cloud Run, environment configuration, basic monitoring/logs.</li>
               <li>Software &amp; Tools: Linux, Git, modular repos, clean project structure.</li>
             </ul>
           </div>
@@ -526,10 +534,14 @@
             <span>⚙️ C / C++</span>
             <span>🛠 Embedded / Real-time</span>
             <span>🌐 TypeScript / NestJS / Next.js</span>
+            <span>⚛️ React</span>
+            <span>📦 Vite</span>
+            <span>🌌 Three.js / React Three Fiber</span>
             <span>🗄️ PostgreSQL / Prisma / pgvector</span>
             <span>⚡ FastAPI / OpenAI API</span>
             <span>💾 Redis / MinIO</span>
             <span>☁️ AWS EC2</span>
+            <span>🚀 Google Cloud Run</span>
             <span>🐧 Linux</span>
             <span>🔁 Git</span>
             <span>📦 Docker / Docker Compose</span>
